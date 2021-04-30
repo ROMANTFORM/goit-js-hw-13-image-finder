@@ -15,7 +15,8 @@ export default class NewServiceApi {
             .then(({hits}) => {
                 this.page += 1
                 return hits;
-            });
+            })
+           .catch(error => console.log(error));
         
     }
 

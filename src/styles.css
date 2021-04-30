@@ -30,7 +30,7 @@ input {
 }
 
 .load-more_btn {
-  display: block;
+  display: none;
   margin: 0 auto;
   border: none;
   border-radius: 10%;
@@ -41,6 +41,9 @@ input {
   cursor: pointer;
 }
 
+.load-more_btn--active {
+  display: block;
+}
 .photo-card {
   display: flex;
   flex-wrap: wrap;
@@ -75,4 +78,18 @@ input {
   left: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button.is-hidden {
+  display: none;
+}
+
+.button > .spinner.is-hidden {
+  display: none;
 }
